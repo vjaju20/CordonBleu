@@ -1,0 +1,1777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cordon Bleu</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js" ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="payment.js"></script>
+
+</head>
+<body>
+<header>
+    <!-- header section start-->
+    <h1> CORDON BLEU</h1>
+    <div class="div-nav-menu">
+        <nav class="nav-menu">
+            <ul class="menu">
+                <li><div class="dropdown">
+                    <button class="dropbtn"><a style="font-size:19px;font-family: 'Open Sans', serif;">Menu</a></button>
+                    <div class="dropdown-content">
+                        <a href="#French">French</a>
+                        <a href="#Italian">Italian</a>
+                        <a href="#Indian">Indian</a>
+                        <a href="#Japanese">Japanese</a>
+                        <a href="#Australian">Australian</a>
+                    </div>
+                </div></li>
+                <li style="width:500px">&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+                <li ><a ><span style="font-size:19px;font-family: 'Open Sans', serif;">Contact Us :-</span></a></li>
+                <li><a><img src="img/call.png" height="30px" width="30px" ></a></li>
+                <li><a href="https://www.facebook.com/FoodWoorlllld/"><img src="img/facebook.png" height="30px" width="30px" ></a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- HEADER END -->
+<div style="height:150px; width:100%;"></div>
+<div id="Calculate"><a href="#ta"><button class="payment" onclick="totalAmount()">Total amount</button></a></div>
+<!-- body part start-->
+
+<!-- French -->
+<div class="French" id="French">
+<h1 class="heading">French </h1>
+
+<!-- Break fast-->
+<div class="fBreakfast">
+    <h2>Breakfast</h2>
+    <div class="fbreakfast-container">
+        <div class="meals">
+            <img src="img/Croissant.jpg" alt="">
+            <div class="meal-info">
+                <p> <b>CROISSANT (2PCS)</b><br>Rate - Rs.80 <br> Enter the Quantity-
+                <input id="aa1" type="number" max="10" min="0" style="width:30px; background:transparent; color:white">
+                </p>
+            </div>
+        </div>
+        <div class="meals">
+            <img src="img/chouquettes-43.jpg" alt="">
+            <div class="meal-info">
+                <p> <b>CHOUQUETTE (5 PCS)</b><br>Rate - Rs.70 <br> Enter the Quantity-
+                    <input id="bb1" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+            </div>
+        </div>
+        <div class="meals">
+            <img src="https://img-3.journaldesfemmes.fr/hK8tcm5uZBbHg-pNeTHsLQbBpJ0=/750x/smart/1870f38ecc844d1daba490bac20f2990/recipe-jdf/10019491.jpg" alt="">
+            <div class="meal-info">
+                <p> <b>PAIN PERDU (4 PCS)</b><br>Rate - Rs.100 <br> Enter the Quantity-
+                    <input id="cc1" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+            </div>
+        </div>
+        <div class="meals">
+            <img src="https://cdn.ottawamagazine.com/wp-content/uploads/2012/05/Pastry-2000x890.jpg" alt="">
+            <div class="meal-info">
+                <p> <b>PAIN AU RAISINS (6 PCS)</b><br>Rate - Rs.130 <br> Enter the Quantity-
+                    <input id="dd1" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+            </div>
+        </div>
+        <div class="meals">
+            <img src="https://dubiodansmonbento.com/wp-content/uploads/2017/01/oeufcocotte1-1170x550.jpg" alt="">
+            <div class="meal-info">
+                <p> <b>OEUFS COCOTTE &NonBreakingSpace; </b><br>Rate - Rs.70 <br> Enter the Quantity-
+                    <input id="ee1" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="fbfslider-nav">
+        <div class="nav-slide">
+            <div class="Img-cover">
+                <img src="img/Croissant.jpg" alt="">
+            </div>
+        </div>
+        <div class="nav-slide">
+            <div class="Img-cover">
+                <img src="img/chouquettes-43.jpg" alt="">
+            </div>
+        </div>
+        <div class="nav-slide">
+            <div class="Img-cover">
+                <img src="https://img-3.journaldesfemmes.fr/hK8tcm5uZBbHg-pNeTHsLQbBpJ0=/750x/smart/1870f38ecc844d1daba490bac20f2990/recipe-jdf/10019491.jpg" alt="">
+            </div>
+        </div>
+        <div class="nav-slide">
+            <div class="Img-cover">
+                <img src="https://cdn.ottawamagazine.com/wp-content/uploads/2012/05/Pastry-2000x890.jpg" alt="">
+            </div>
+        </div>
+        <div class="nav-slide">
+            <div class="Img-cover">
+                <img src="https://dubiodansmonbento.com/wp-content/uploads/2017/01/oeufcocotte1-1170x550.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+    </div>
+<!-- breakfast end-->
+
+<!-- lunch and dinner start-->
+    <div class="flandd">
+        <h2>Lunch & Dinner</h2>
+        <div class="flandd-container">
+        <div class="meals">
+            <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-190625-lobster-bisque-0220-landscape-pf-1561752864.jpg" alt="">
+            <div class="meal-info">
+                <p> <b>LOBSTER BISQUE</b><br>Rate - Rs.230 <br> Enter the Quantity-
+                    <input id="ff1" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+            </div>
+        </div>
+        <div class="meals">
+            <img src="https://www.portofinotuna.com/sites/default/files/PortofinoClassicNicoiseSalad.jpg" alt="">
+            <div class="meal-info">
+                <p> <b>CLASSIC NICOISE</b><br>Rate - Rs.165 <br> Enter the Quantity-
+                    <input id="gg1" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+            </div>
+        </div>
+        <div class="meals">
+            <img src="https://skinnyms.com/wp-content/uploads/2018/04/Traditional-Ratatouille-1.jpg" alt="">
+            <div class="meal-info">
+                <p> <b>RATATOUILLE</b><br>Rate - Rs.225 <br> Enter the Quantity-
+                    <input id="hh1" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+            </div>
+        </div>
+        <div class="meals">
+                <img src="https://www.errenskitchen.com/wp-content/uploads/2017/01/Coq-au-vin.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>COQ AU VIN</b><br>Rate - Rs.270 <br> Enter the Quantity-
+                        <input id="ii1" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+        </div>
+        <div class="meals">
+                <img src="https://www.thespruceeats.com/thmb/aK_ruyPxHgOh5XXJmoUeV3p3RHs=/3864x2173/smart/filters:no_upscale()/156854273-56a32bd93df78cf7727c2714.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>COGNAC SHRIMP WITH BEURRE BLANC SAUCE</b><br>Rate - Rs.255 <br> Enter the Quantity-
+                        <input id="jj1" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+        </div>
+            <div class="meals">
+                <img src="https://assets.epicurious.com/photos/57a8adfbb10b4fb03f234f37/2:1/w_1260%2Ch_630/escargots-a-la-bourguignonne.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>ESCARGOT</b><br>Rate - Rs.240 <br> Enter the Quantity-
+                        <input id="kk1" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://www.irenemilito.it/wp-content/uploads/2018/10/Lentil-Soup-5.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>FRENCH LENTIL SOUP</b><br>Rate - Rs.220 <br> Enter the Quantity-
+                        <input id="ll1" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://andrewzimmern.com/wp-content/uploads/Andrew-Zimmerns-Steak-au-poivre-1-1600x800.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>STEAK AU POIVRE</b><br>Rate - Rs.300 <br> Enter the Quantity-
+                        <input id="mm1" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://www.thespruceeats.com/thmb/q1PK8eGp152xQNhDXhLIVsATHJY=/3982x2240/smart/filters:no_upscale()/GettyImages-135596679-57bad0b53df78c87638b7dd3.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>DUCK A L'ORANGE</b><br>Rate - Rs.285 <br> Enter the Quantity-
+                        <input id="nn1" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://img.taste.com.au/rbSJdD-r/taste/2018/05/june-18_croque-monsieur-137711-1.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>CROQUE MONSIEUR</b><br>Rate - Rs.190 <br> Enter the Quantity-
+                        <input id="oo1" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+    </div>
+
+    <div class="flanddslider-nav">
+        <div class="nav-slide">
+            <div class="Img-cover">
+                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-190625-lobster-bisque-0220-landscape-pf-1561752864.jpg" alt="">
+            </div>
+        </div>
+        <div class="nav-slide">
+            <div class="Img-cover">
+                <img src="https://www.portofinotuna.com/sites/default/files/PortofinoClassicNicoiseSalad.jpg" alt="">
+            </div>
+        </div>
+        <div class="nav-slide">
+            <div class="Img-cover">
+                <img src="https://skinnyms.com/wp-content/uploads/2018/04/Traditional-Ratatouille-1.jpg" alt="">
+            </div>
+        </div>
+        <div class="nav-slide">
+            <div class="Img-cover">
+                <img src="https://www.errenskitchen.com/wp-content/uploads/2017/01/Coq-au-vin.jpg" alt="">
+            </div>
+        </div>
+        <div class="nav-slide">
+            <div class="Img-cover">
+                <img src="https://www.thespruceeats.com/thmb/aK_ruyPxHgOh5XXJmoUeV3p3RHs=/3864x2173/smart/filters:no_upscale()/156854273-56a32bd93df78cf7727c2714.jpg" alt="">
+            </div>
+        </div>
+        <div class="nav-slide">
+            <div class="Img-cover">
+                <img src="https://assets.epicurious.com/photos/57a8adfbb10b4fb03f234f37/2:1/w_1260%2Ch_630/escargots-a-la-bourguignonne.jpg" alt="">
+            </div>
+        </div>
+        <div class="nav-slide">
+            <div class="Img-cover">
+                <img src="https://www.irenemilito.it/wp-content/uploads/2018/10/Lentil-Soup-5.jpg" alt="">
+            </div>
+        </div>
+        <div class="nav-slide">
+            <div class="Img-cover">
+                <img src="https://andrewzimmern.com/wp-content/uploads/Andrew-Zimmerns-Steak-au-poivre-1-1600x800.jpg" alt="">
+            </div>
+        </div>
+        <div class="nav-slide">
+            <div class="Img-cover">
+                <img src="https://www.thespruceeats.com/thmb/q1PK8eGp152xQNhDXhLIVsATHJY=/3982x2240/smart/filters:no_upscale()/GettyImages-135596679-57bad0b53df78c87638b7dd3.jpg" alt="">
+            </div>
+        </div>
+        <div class="nav-slide">
+            <div class="Img-cover">
+                <img src="https://img.taste.com.au/rbSJdD-r/taste/2018/05/june-18_croque-monsieur-137711-1.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- lunch and dinner end-->
+
+    <!-- desert start-->
+    <div class="fdesert">
+        <h2>Dessert</h2>
+        <div class="fdesert-container">
+            <div class="meals">
+                <img src="img/CREPES.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>CREPES</b><br>Rate - Rs.110 <br> Enter the Quantity-
+                        <input id="pp1" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/pears.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>PEARS BELLE HELENE</b><br>Rate - Rs.225 <br> Enter the Quantity-
+                        <input id="qq1" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/clafoutis.jpeg" alt="">
+                <div class="meal-info">
+                    <p><b>CHERRY CLAFOUTIS</b><br>Rate - Rs.155 <br> Enter the Quantity-
+                        <input id="rr1" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://img.taste.com.au/uvJsIT4B/taste/2016/11/creme-caramels-39521-1.jpeg" alt="">
+                <div class="meal-info">
+                    <p><b>CREME AU CARAMEL</b><br>Rate - Rs.90 <br> Enter the Quantity-
+                        <input id="ss1" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://i.ytimg.com/vi/hXD4xdf1ZS4/maxresdefault.jpg" alt="">
+                <div class="meal-info">
+                    <p><b>OPERA CAKE (2PCS)</b><br>Rate - Rs.140 <br> Enter the Quantity-
+                        <input id="tt1" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="fdesertslider-nav">
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/CREPES.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/pears.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/clafoutis.jpeg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://img.taste.com.au/uvJsIT4B/taste/2016/11/creme-caramels-39521-1.jpeg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://i.ytimg.com/vi/hXD4xdf1ZS4/maxresdefault.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- French end -->
+
+<!-- ITALIAN -->
+<div class="Italian" id="Italian">
+    <h1 class="heading">Italian </h1>
+
+    <!-- Break fast-->
+    <div class="iBreakfast">
+        <h2>Breakfast</h2>
+        <div class="ibreakfast-container">
+            <div class="meals">
+                <img src="https://3.bp.blogspot.com/-ooLW7sX1Ef8/UyipidtQJ3I/AAAAAAAAFdY/r3WYnY6E52k/s1600/DSC_0017.JPG" alt="">
+                <div class="meal-info">
+                    <p> <b>BRUNCH TORTE (4PCS)</b><br>Rate - Rs.125 <br> Enter the Quantity-
+                        <input id="aa2" type="number" max="10" min="0" style="width:30px; background:transparent; color:white">
+                    </p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://cdn3.tmbi.com/toh/GoogleImages/Italian-Baked-Eggs---Sausage_EXPS_THFM17_63535_B09_27_2b.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>BAKED EGGS & SAUSAGE</b><br>Rate - Rs.140 <br> Enter the Quantity-
+                        <input id="bb2" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://i.ytimg.com/vi/W6dvgKBfVp8/maxresdefault.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>CLOUD EGGS (2 PCS)</b><br>Rate - Rs.100 <br> Enter the Quantity-
+                        <input id="cc2" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://cdn3.tmbi.com/toh/GoogleImages/exps25873_SD153322B04_07_3b.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>CALICO PEPPER FRITTATA (2 PCS)</b><br>Rate - Rs.115 <br> Enter the Quantity-
+                        <input id="dd2" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Tiramisu-Crepes_exps50136_SD19999445D09_01_5bC_RMS-1-696x696.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>TIRAMISU CREPES &NonBreakingSpace; </b><br>Rate - Rs.130 <br> Enter the Quantity-
+                        <input id="ee2" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ibfslider-nav">
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://3.bp.blogspot.com/-ooLW7sX1Ef8/UyipidtQJ3I/AAAAAAAAFdY/r3WYnY6E52k/s1600/DSC_0017.JPG" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://cdn3.tmbi.com/toh/GoogleImages/Italian-Baked-Eggs---Sausage_EXPS_THFM17_63535_B09_27_2b.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://i.ytimg.com/vi/W6dvgKBfVp8/maxresdefault.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://cdn3.tmbi.com/toh/GoogleImages/exps25873_SD153322B04_07_3b.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Tiramisu-Crepes_exps50136_SD19999445D09_01_5bC_RMS-1-696x696.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- breakfast end-->
+
+    <!-- lunch and dinner start-->
+    <div class="ilandd">
+        <h2>Lunch & Dinner</h2>
+        <div class="ilandd-container">
+            <div class="meals">
+                <img src="https://i.ytimg.com/vi/i-TAfCQ62q0/maxresdefault.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>CAPRESE SALAD with PESTO SAUCE</b><br>Rate - Rs.170 <br> Enter the Quantity-
+                        <input id="ff2" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/190508-bruschetta-horizontal-2-1558014808.png?crop=1.00xw:0.752xh;0,0.137xh&resize=1200:*" alt="">
+                <div class="meal-info">
+                    <p> <b>BRUSCHETTA ( 3 PCS)</b><br>Rate - Rs.215 <br> Enter the Quantity-
+                        <input id="gg2" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://www.lifesambrosia.com/wp-content/uploads/spaghetti-carbonara.jpg.pagespeed.ce.GuOJhqRmNU.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>PASTA CARBONARA</b><br>Rate - Rs.195 <br> Enter the Quantity-
+                        <input id="hh2" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://onlineculinaryschool.net/wp-content/uploads/2018/10/online_culinary_school_pizza_margherita-1.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>MARGHERITA PIZZA(LARGE)</b><br>Rate - Rs.230 <br> Enter the Quantity-
+                        <input id="ii2" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/Lasagna.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>LASAGNA</b><br>Rate - Rs.240 <br> Enter the Quantity-
+                        <input id="jj2" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/fio-steak.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>FIORENTINA STEAK</b><br>Rate - Rs.265 <br> Enter the Quantity-
+                        <input id="kk2" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://www.en.buonalombardia.it/wps/wcm/connect/20d0ec06-e48e-4f75-aaf4-ff743df4e82d/Risotto-alla-Milanese-e-ossobuco-in-gremolada-1.jpg?MOD=AJPERES" alt="">
+                <div class="meal-info">
+                    <p> <b>OSSOBUCO ALLA MILANESE</b><br>Rate - Rs.210 <br> Enter the Quantity-
+                        <input id="ll2" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://images.ctfassets.net/qu53tdnhexvd/3kOw7RpfeMSsMUoAy6aoW2/736bdce6b0a0c36bf14a159226a44cd8/panzanella-salad.jpg?fm=jpg&fl=progressive&q=80&w=1300" alt="">
+                <div class="meal-info">
+                    <p> <b>PANZANELLA</b><br>Rate - Rs.175 <br> Enter the Quantity-
+                        <input id="mm2" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://hips.hearstapps.com/del.h-cdn.co/assets/17/39/2048x1024/landscape-1506456062-delish-spaghetti-meatballs.jpg?resize=1200:*" alt="">
+                <div class="meal-info">
+                    <p> <b>SPAGHETTI & MEAT BALLS</b><br>Rate - Rs.300 <br> Enter the Quantity-
+                        <input id="nn2" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://www.onceuponachef.com/images/2018/01/Chicken-Marsala.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>CHICKEN MARSALA</b><br>Rate - Rs.270 <br> Enter the Quantity-
+                        <input id="oo2" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ilanddslider-nav">
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://i.ytimg.com/vi/i-TAfCQ62q0/maxresdefault.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/190508-bruschetta-horizontal-2-1558014808.png?crop=1.00xw:0.752xh;0,0.137xh&resize=1200:*" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://www.lifesambrosia.com/wp-content/uploads/spaghetti-carbonara.jpg.pagespeed.ce.GuOJhqRmNU.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://onlineculinaryschool.net/wp-content/uploads/2018/10/online_culinary_school_pizza_margherita-1.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/Lasagna.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/fio-steak.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://www.en.buonalombardia.it/wps/wcm/connect/20d0ec06-e48e-4f75-aaf4-ff743df4e82d/Risotto-alla-Milanese-e-ossobuco-in-gremolada-1.jpg?MOD=AJPERES" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://images.ctfassets.net/qu53tdnhexvd/3kOw7RpfeMSsMUoAy6aoW2/736bdce6b0a0c36bf14a159226a44cd8/panzanella-salad.jpg?fm=jpg&fl=progressive&q=80&w=1300" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://hips.hearstapps.com/del.h-cdn.co/assets/17/39/2048x1024/landscape-1506456062-delish-spaghetti-meatballs.jpg?resize=1200:*" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://www.onceuponachef.com/images/2018/01/Chicken-Marsala.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- lunch and dinner end-->
+
+    <!-- desert start-->
+    <div class="idesert">
+        <h2>Dessert</h2>
+        <div class="idesert-container">
+            <div class="meals">
+                <img src="https://www.exceedinglyvegan.com/vegan/2915/6940/5113/easy-vegan-panna-cotta.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>BERRIES PANNA COTTA(2 PCS)</b><br>Rate - Rs.140 <br> Enter the Quantity-
+                        <input id="pp2" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://dolciveloci.it/wp-content/uploads/2019/05/SH_gelato_pistacchio-1024x683.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>GELATO AL PISTACCHIO</b><br>Rate - Rs.65 <br> Enter the Quantity-
+                        <input id="qq2" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://dpv87w1mllzh1.cloudfront.net/alitalia_discover/attachments/data/000/000/554/original/palermo-how-to-cassata-1920x1080.jpg?1519212186" alt="">
+                <div class="meal-info">
+                    <p><b>CASSATA</b><br>Rate - Rs.80 <br> Enter the Quantity-
+                        <input id="rr2" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://www.italianspoon.com.au/wp-content/uploads/2018/06/938-970x600.jpg" alt="">
+                <div class="meal-info">
+                    <p><b>CROSTATA</b><br>Rate - Rs.90 <br> Enter the Quantity-
+                        <input id="ss2" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://files.meilleurduchef.com/mdc/photo/recipe/nougat/nougat-1200.jpg" alt="">
+                <div class="meal-info">
+                    <p><b>NOUGAT (2PCS)</b><br>Rate - Rs.125 <br> Enter the Quantity-
+                        <input id="tt2" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="idesertslider-nav">
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://www.exceedinglyvegan.com/vegan/2915/6940/5113/easy-vegan-panna-cotta.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://dolciveloci.it/wp-content/uploads/2019/05/SH_gelato_pistacchio-1024x683.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://dpv87w1mllzh1.cloudfront.net/alitalia_discover/attachments/data/000/000/554/original/palermo-how-to-cassata-1920x1080.jpg?1519212186" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://www.italianspoon.com.au/wp-content/uploads/2018/06/938-970x600.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://files.meilleurduchef.com/mdc/photo/recipe/nougat/nougat-1200.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Italian end -->
+
+<!-- INDIAN -->
+<div class="Indian" id="Indian">
+    <h1 class="heading">Indian </h1>
+
+    <!-- Break fast-->
+    <div class="inBreakfast">
+        <h2>Breakfast</h2>
+        <div class="inbreakfast-container">
+            <div class="meals">
+                <img src="https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>ALOO PARANTHA</b><br>Rate - Rs.40 <br> Enter the Quantity-
+                        <input id="aa3" type="number" max="10" min="0" style="width:30px; background:transparent; color:white">
+                    </p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://media.cntraveller.in/wp-content/uploads/2020/05/samosa-1366x768.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>SAMOSA</b><br>Rate - Rs.20 <br> Enter the Quantity-
+                        <input id="bb3" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://pandareviewz.com/wp-content/uploads/2018/08/Mangesh-Vada-Pav.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>VADA PAV</b><br>Rate - Rs.30 <br> Enter the Quantity-
+                        <input id="cc3" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://i.ytimg.com/vi/x2_F2duRaQc/maxresdefault.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>SAMBHAR-DOSA</b><br>Rate - Rs.170 <br> Enter the Quantity-
+                        <input id="dd3" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://media.cntraveller.in/wp-content/uploads/2018/02/Cover_Shiv-Sagar.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>PAV BHAJI &NonBreakingSpace; </b><br>Rate - Rs.150 <br> Enter the Quantity-
+                        <input id="ee3" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="inbfslider-nav">
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://media.cntraveller.in/wp-content/uploads/2020/05/samosa-1366x768.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://pandareviewz.com/wp-content/uploads/2018/08/Mangesh-Vada-Pav.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://i.ytimg.com/vi/x2_F2duRaQc/maxresdefault.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://media.cntraveller.in/wp-content/uploads/2018/02/Cover_Shiv-Sagar.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- breakfast end-->
+
+    <!-- lunch and dinner start-->
+    <div class="inlandd">
+        <h2>Lunch & Dinner</h2>
+        <div class="inlandd-container">
+            <div class="meals">
+                <img src="https://i.ytimg.com/vi/V8pyiTyKhSw/maxresdefault.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>MASALA BHINDI</b><br>Rate - Rs.220 <br> Enter the Quantity-
+                        <input id="ff3" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/DalMakhni.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>DAL MAKHNI</b><br>Rate - Rs.180 <br> Enter the Quantity-
+                        <input id="gg3" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://www.thespruceeats.com/thmb/0mapLbrjEH8-iMB4RBMTYbV-Urc=/3863x2578/filters:fill(auto,1)/paneer-butter-masala-or-cheese-cottage-curry--popular-indian-lunch-dinner-menu-in-weddings-or-parties--selective-focus-669329084-5acac5acc67335003764a3bc.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>PANEER BUTTER MASALA</b><br>Rate - Rs.270 <br> Enter the Quantity-
+                        <input id="hh3" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://i.ytimg.com/vi/E7RpadpxHFI/maxresdefault.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>GUJRATI KADHI</b><br>Rate - Rs.175 <br> Enter the Quantity-
+                        <input id="ii3" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://thebiryanicentral.com/pub/media/magefan_blog/tehri2.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>ALLAHBAD KI TEHRI</b><br>Rate - Rs.205 <br> Enter the Quantity-
+                        <input id="jj3" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://healthyfitnessmeals.com/wp-content/uploads/2020/01/Butter-chicken.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>BUTTER CHICKEN</b><br>Rate - Rs.250 <br> Enter the Quantity-
+                        <input id="kk3" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://i.ndtvimg.com/i/2018-01/shahi-egg-curry_1254x837_81514891999.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>SHAHI EGG CURRY</b><br>Rate - Rs.240 <br> Enter the Quantity-
+                        <input id="ll3" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/Chicken65.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>SPICY CHICKEN 65</b><br>Rate - Rs.225 <br> Enter the Quantity-
+                        <input id="mm3" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://i.pinimg.com/originals/b7/cc/44/b7cc44fc27302c0d2c7260f4fd91be3a.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>GRILLED CHICKEN ESCALOPE with <br> FRESH SALSA</b><br>Rate - Rs.330 <br> Enter the Quantity-
+                        <input id="nn3" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://img.delicious.com.au/cFkLYWP8/del/2015/10/tandoori-lamb-cutlets-with-bombay-potatoes-13641-1.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>TANDOORI LAMB CHOPS( 3 PCS )</b><br>Rate - Rs.295 <br> Enter the Quantity-
+                        <input id="oo3" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="inlanddslider-nav">
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://i.ytimg.com/vi/V8pyiTyKhSw/maxresdefault.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/DalMakhni.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://www.thespruceeats.com/thmb/0mapLbrjEH8-iMB4RBMTYbV-Urc=/3863x2578/filters:fill(auto,1)/paneer-butter-masala-or-cheese-cottage-curry--popular-indian-lunch-dinner-menu-in-weddings-or-parties--selective-focus-669329084-5acac5acc67335003764a3bc.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://i.ytimg.com/vi/E7RpadpxHFI/maxresdefault.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://thebiryanicentral.com/pub/media/magefan_blog/tehri2.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://healthyfitnessmeals.com/wp-content/uploads/2020/01/Butter-chicken.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://i.ndtvimg.com/i/2018-01/shahi-egg-curry_1254x837_81514891999.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/Chicken65.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://i.pinimg.com/originals/b7/cc/44/b7cc44fc27302c0d2c7260f4fd91be3a.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://img.delicious.com.au/cFkLYWP8/del/2015/10/tandoori-lamb-cutlets-with-bombay-potatoes-13641-1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- lunch and dinner end-->
+
+    <!-- desert start-->
+    <div class="indesert">
+        <h2>Breads</h2>
+        <div class="indesert-container">
+            <div class="meals">
+                <img src="https://www.currylounge.com.hk/wp-content/uploads/2019/03/Butter-Roti.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>BUTTER ROTI</b><br>Rate - Rs.20 <br> Enter the Quantity-
+                        <input id="pp3" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/TandooriRoti.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>TANDOORI ROTI</b><br>Rate - Rs.25 <br> Enter the Quantity-
+                        <input id="qq3" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://www.mortonsflour.com/wp-content/uploads/2018/02/Authentic-Naan-Bread.jpg" alt="">
+                <div class="meal-info">
+                    <p><b>PLAIN NAAN</b><br>Rate - Rs.35 <br> Enter the Quantity-
+                        <input id="rr3" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://static.toiimg.com/photo/53338316.cms" alt="">
+                <div class="meal-info">
+                    <p><b>BUTTER NAAN</b><br>Rate - Rs.60 <br> Enter the Quantity-
+                        <input id="ss3" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="https://cf-images.us-east-1.prod.boltdns.net/v1/static/1033249144001/bad3dcc7-df05-43f5-9132-e6c66ddb2646/e5a7fae8-5f2c-479c-80fd-fed453c94765/1280x720/match/image.jpg" alt="">
+                <div class="meal-info">
+                    <p><b>GARLIC NAAN</b><br>Rate - Rs.45 <br> Enter the Quantity-
+                        <input id="tt3" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="indesertslider-nav">
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://www.currylounge.com.hk/wp-content/uploads/2019/03/Butter-Roti.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/TandooriRoti.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://www.mortonsflour.com/wp-content/uploads/2018/02/Authentic-Naan-Bread.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://static.toiimg.com/photo/53338316.cms" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="https://cf-images.us-east-1.prod.boltdns.net/v1/static/1033249144001/bad3dcc7-df05-43f5-9132-e6c66ddb2646/e5a7fae8-5f2c-479c-80fd-fed453c94765/1280x720/match/image.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- INDIAN end -->
+
+<!-- JAPANESE -->
+<div class="Japanese" id="Japanese">
+    <h1 class="heading">Japanese </h1>
+
+    <!-- Break fast-->
+    <div class="jBreakfast">
+        <h2>Breakfast</h2>
+        <div class="jbreakfast-container">
+            <div class="meals">
+                <img src="img/onigiri.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>ONIGIRI (4PCS)</b><br>Rate - Rs.135 <br> Enter the Quantity-
+                        <input id="aa4" type="number" max="10" min="0" style="width:30px; background:transparent; color:white">
+                    </p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/tempura.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>TEMPURA</b><br>Rate - Rs.110 <br> Enter the Quantity-
+                        <input id="bb4" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/tamagoyaki.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>TAMAGOYAKI</b><br>Rate - Rs.120 <br> Enter the Quantity-
+                        <input id="cc4" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/chawanmushi.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>CHAWAN MUSHI</b><br>Rate - Rs.85 <br> Enter the Quantity-
+                        <input id="dd4" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/kinshitamgo.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>KINSHI TAMAGO &NonBreakingSpace; </b><br>Rate - Rs.100 <br> Enter the Quantity-
+                        <input id="ee4" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="jbfslider-nav">
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/onigiri.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/tempura.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/tamagoyaki.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/chawanmushi.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/kinshitamgo.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- breakfast end-->
+
+    <!-- lunch and dinner start-->
+    <div class="jlandd">
+        <h2>Lunch & Dinner</h2>
+        <div class="jlandd-container">
+            <div class="meals">
+                <img src="img/ekibenbento.gif" alt="">
+                <div class="meal-info">
+                    <p> <b>EKIBEN BENTO BOX</b><br>Rate - Rs.195 <br> Enter the Quantity-
+                        <input id="ff4" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/tonkatsupork.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>TONKATSU PORK</b><br>Rate - Rs.210 <br> Enter the Quantity-
+                        <input id="gg4" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/misosoup.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>MISO SOUP</b><br>Rate - Rs.165 <br> Enter the Quantity-
+                        <input id="hh4" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/okonomiyaki.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>VEGGIE OKONOMIYAKI</b><br>Rate - Rs.150 <br> Enter the Quantity-
+                        <input id="ii4" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/sushibowl.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>SUSHI BOWL</b><br>Rate - Rs.230 <br> Enter the Quantity-
+                        <input id="jj4" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/salmonsushi.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>SMOKED SALMON &<br> AVACADO SUSHI(6 PCS)</b><br>Rate - Rs.275 <br> Enter the Quantity-
+                        <input id="kk4" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/chickenyakitori.jpeg" alt="">
+                <div class="meal-info">
+                    <p> <b>YAKITORI CHICKEN(4 PCS)</b><br>Rate - Rs.180 <br> Enter the Quantity-
+                        <input id="ll4" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/misosteak.jpeg" alt="">
+                <div class="meal-info">
+                    <p> <b>MISO STEAK</b><br>Rate - Rs.240 <br> Enter the Quantity-
+                        <input id="mm4" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/katsupork.jpeg" alt="">
+                <div class="meal-info">
+                    <p> <b>KATSU PORK WITH STICKY RICE</b><br>Rate - Rs.225 <br> Enter the Quantity-
+                        <input id="nn4" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/misochicken.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>MISO CARAMEL CHICKEN WINGS(6 PCS) </b><br>Rate - Rs.280 <br> Enter the Quantity-
+                        <input id="oo4" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="jlanddslider-nav">
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/ekibenbento.gif" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/tonkatsupork.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/misosoup.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/okonomiyaki.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/sushibowl.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/salmonsushi.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/chickenyakitori.jpeg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/misosteak.jpeg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/katsupork.jpeg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/misochicken.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- lunch and dinner end-->
+
+    <!-- desert start-->
+    <div class="jdesert">
+        <h2>Dessert</h2>
+        <div class="jdesert-container">
+            <div class="meals">
+                <img src="img/fluffypancake.png" alt="">
+                <div class="meal-info">
+                    <p> <b>FLUFFY PANCAKES (2 PCS)</b><br>Rate - Rs.130 <br> Enter the Quantity-
+                        <input id="pp4" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/castella.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>CASTELLA (4 PCS)</b><br>Rate - Rs.145 <br> Enter the Quantity-
+                        <input id="qq4" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/kohizeri.jpg" alt="">
+                <div class="meal-info">
+                    <p><b>KOHI ZERI</b><br>Rate - Rs.95 <br> Enter the Quantity-
+                        <input id="rr4" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/anmitsu.jpg" alt="">
+                <div class="meal-info">
+                    <p><b>ANMITSU</b><br>Rate - Rs.150 <br> Enter the Quantity-
+                        <input id="ss4" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/taiyaki.jpg" alt="">
+                <div class="meal-info">
+                    <p><b>TAIYAKI (2PCS)</b><br>Rate - Rs.75 <br> Enter the Quantity-
+                        <input id="tt4" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="jdesertslider-nav">
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/fluffypancake.png" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/castella.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/kohizeri.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/anmitsu.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/taiyaki.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- JAPANESE end -->
+
+<!-- Australian -->
+<div class="Australian" id="Australian">
+    <h1 class="heading">Australian </h1>
+
+    <!-- Break fast-->
+    <div class="ABreakfast">
+        <h2>Breakfast</h2>
+        <div class="abreakfast-container">
+            <div class="meals">
+                <img src="img/chillilabneheggs.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>CHILLI LABNEH EGGS</b><br>Rate - Rs.125 <br> Enter the Quantity-
+                        <input id="aa5" type="number" max="10" min="0" style="width:30px; background:transparent; color:white">
+                    </p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/coconut-chia-with-strawberry-gum-syrup-87073-2.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>COCONUT CHIA with <BR> STRAWBERRY GUM SYRUP</b><br>Rate - Rs.140 <br> Enter the Quantity-
+                        <input id="bb5" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/smoked-fish-rosti-with-seasonal-greens-87077-2.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>SMOKED FISH ROSTI with <br> SEASONAL GREENS</b><br>Rate - Rs.160 <br> Enter the Quantity-
+                        <input id="cc5" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/poached-egg-with-avocado-on-toast.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>SMASHED AVACADOS ON TOAST WITH <BR> POACHED EGGS</b><br>Rate - Rs.130 <br> Enter the Quantity-
+                        <input id="dd5" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/chocolate-hazelnut-pancakes.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>COCO HAZELNUT PANCAKES (5 PCS)</b><br>Rate - Rs.175 <br> Enter the Quantity-
+                        <input id="ee5" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="abfslider-nav">
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/chillilabneheggs.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/coconut-chia-with-strawberry-gum-syrup-87073-2.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/smoked-fish-rosti-with-seasonal-greens-87077-2.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/poached-egg-with-avocado-on-toast.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/chocolate-hazelnut-pancakes.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- breakfast end-->
+
+    <!-- lunch and dinner start-->
+    <div class="Alandd">
+        <h2>Lunch & Dinner</h2>
+        <div class="alandd-container">
+            <div class="meals">
+                <img src="img/bbqshrimp.webp" alt="">
+                <div class="meal-info">
+                    <p> <b>BARBECUED SHRIMP</b><br>Rate - Rs.170 <br> Enter the Quantity-
+                        <input id="ff5" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/steak.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>STEAK</b><br>Rate - Rs.220 <br> Enter the Quantity-
+                        <input id="gg5" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/Dim_Sims_large-1024x515.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>DIM SIM (8 PCS)</b><br>Rate - Rs.265 <br> Enter the Quantity-
+                        <input id="hh5" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/fishandchip.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>FISH & CHIPS</b><br>Rate - Rs.185 <br> Enter the Quantity-
+                        <input id="ii5" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/carrotandturnip%20soup.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>CURRIED CARROT & TURNIP SOUP</b><br>Rate - Rs.150 <br> Enter the Quantity-
+                        <input id="jj5" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/Garlic-Butter-Baked-Chicken-Breast-Primavera-Kitchen-2-1.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>ROAST CHICKEN with GARLIC<BR> HERBED BUTTER</b><br>Rate - Rs.245 <br> Enter the Quantity-
+                        <input id="kk5" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/vegetable-pot-pie.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>CHICKEN & VEGETABLE POT PIE</b><br>Rate - Rs.230 <br> Enter the Quantity-
+                        <input id="ll5" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/Quinoa-and-Tuna-Salad-Twitter.png" alt="">
+                <div class="meal-info">
+                    <p> <b>QUINOA, TUNA & CHICKPEA SALAD</b><br>Rate - Rs.165 <br> Enter the Quantity-
+                        <input id="mm5" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/crispy-fish-burger-with-jalapeno-tartare-sauce-50486970.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>FISH BURGER with TARTAR SAUCE</b><br>Rate - Rs.210 <br> Enter the Quantity-
+                        <input id="nn5" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/lamb.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>MARINATED LAMB BACKSTRAP BBQ </b><br>Rate - Rs.285 <br> Enter the Quantity-
+                        <input id="oo5" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="alanddslider-nav">
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/bbqshrimp.webp" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/steak.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/Dim_Sims_large-1024x515.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/fishandchip.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/carrotandturnip%20soup.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/Garlic-Butter-Baked-Chicken-Breast-Primavera-Kitchen-2-1.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/vegetable-pot-pie.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/Quinoa-and-Tuna-Salad-Twitter.png" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/crispy-fish-burger-with-jalapeno-tartare-sauce-50486970.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/lamb.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- lunch and dinner end-->
+
+    <!-- desert start-->
+    <div class="Adesert">
+        <h2>Dessert</h2>
+        <div class="adesert-container">
+            <div class="meals">
+                <img src="img/strawberry-lamingtons.png" alt="">
+                <div class="meal-info">
+                    <p> <b>LAMIGTON CAKE with STRAWBERRY <BR>JAM(2 PCS)</b><br>Rate - Rs.75 <br> Enter the Quantity-
+                        <input id="pp5" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/Wagon-Wheel-Slice_Feature.jpg" alt="">
+                <div class="meal-info">
+                    <p> <b>WAGON WHEEL SLICE(1 PCS)</b><br>Rate - Rs.90 <br> Enter the Quantity-
+                        <input id="qq5" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/triple-honey-chocolate-trifle-39915-2.webp" alt="">
+                <div class="meal-info">
+                    <p><b>TRIPLE HONEY CHOCLATE TRIFLE</b><br>Rate - Rs.140 <br> Enter the Quantity-
+                        <input id="rr5" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/web-pine-lime-coconut-pops.jpg" alt="">
+                <div class="meal-info">
+                    <p><b>COCONUT PINE-LIME POPS (4 PCS)</b><br>Rate - Rs.155 <br> Enter the Quantity-
+                        <input id="ss5" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="img/pavlova.jpg" alt="">
+                <div class="meal-info">
+                    <p><b>PAVLOVA with TEA & SCONES TOPPING</b><br>Rate - Rs.120 <br> Enter the Quantity-
+                        <input id="tt5" type="number" max="10" min="0" style="width:30px; background:transparent; color:white"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="adesertslider-nav">
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/strawberry-lamingtons.png" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/Wagon-Wheel-Slice_Feature.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/triple-honey-chocolate-trifle-39915-2.webp" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/web-pine-lime-coconut-pops.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-slide">
+                <div class="Img-cover">
+                    <img src="img/pavlova.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Australian end -->
+
+<div id="bill"><p id="ta"></p> <br><a href=payment.html><button id="paybutton">Pay Bill</button></a></div>
+
+
+<script type="text/javascript">
+
+// For breakfast of french
+    $('.fbreakfast-container').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        arrows:false,
+        asNavFor: '.fbfslider-nav'
+
+    });
+    $('.fbfslider-nav').slick({
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        asNavFor: '.fbreakfast-container',
+        centerMode: false,
+        infinite: true,
+        centerPadding: '60px',
+        focusOnSelect: true,
+        draggable:false,
+    });
+// end of breakfast for french
+
+// For lunch and dinner of french
+$('.flandd-container').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    arrows:true,
+    asNavFor: '.flanddslider-nav'
+
+});
+$('.flanddslider-nav').slick({
+    slidesToShow: 5,
+    slidesToScroll: 3,
+    asNavFor: '.flandd-container',
+    centerMode: false,
+    infinite: false,
+    centerPadding: '60px',
+    focusOnSelect: true,
+    draggable:true,
+    arrows:false,
+    dots:true
+});
+// end of lunch and dinner for french
+
+// For desert of french
+$('.fdesert-container').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    arrows:false,
+    asNavFor: '.fdesertslider-nav'
+
+});
+$('.fdesertslider-nav').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    asNavFor: '.fdesert-container',
+    centerMode: false,
+    infinite: false,
+    centerPadding: '60px',
+    focusOnSelect: true,
+    draggable:false
+});
+// end of desert for french
+
+// For breakfast of italian
+$('.ibreakfast-container').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    arrows:false,
+    asNavFor: '.ibfslider-nav'
+
+});
+$('.ibfslider-nav').slick({
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    asNavFor: '.ibreakfast-container',
+    centerMode: false,
+    infinite: true,
+    centerPadding: '60px',
+    focusOnSelect: true,
+    draggable:false,
+});
+// end of breakfast for italian
+
+// For lunch and dinner of italian
+$('.ilandd-container').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    arrows:true,
+    asNavFor: '.ilanddslider-nav'
+
+});
+$('.ilanddslider-nav').slick({
+    slidesToShow: 5,
+    slidesToScroll: 3,
+    asNavFor: '.ilandd-container',
+    centerMode: false,
+    infinite: false,
+    centerPadding: '60px',
+    focusOnSelect: true,
+    draggable:true,
+    arrows:false,
+    dots:true
+});
+// end of lunch and dinner for italian
+
+// For desert of italian
+$('.idesert-container').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    arrows:false,
+    asNavFor: '.idesertslider-nav'
+
+});
+$('.idesertslider-nav').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    asNavFor: '.idesert-container',
+    centerMode: false,
+    infinite: false,
+    centerPadding: '60px',
+    focusOnSelect: true,
+    draggable:false
+});
+// end of desert for italian
+
+// For breakfast of indian
+$('.inbreakfast-container').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    arrows:false,
+    asNavFor: '.inbfslider-nav'
+
+});
+$('.inbfslider-nav').slick({
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    asNavFor: '.inbreakfast-container',
+    centerMode: false,
+    infinite: true,
+    centerPadding: '60px',
+    focusOnSelect: true,
+    draggable:false,
+});
+// end of breakfast for indian
+
+// For lunch and dinner of indian
+$('.inlandd-container').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    arrows:true,
+    asNavFor: '.inlanddslider-nav'
+
+});
+$('.inlanddslider-nav').slick({
+    slidesToShow: 5,
+    slidesToScroll: 3,
+    asNavFor: '.inlandd-container',
+    centerMode: false,
+    infinite: false,
+    centerPadding: '60px',
+    focusOnSelect: true,
+    draggable:true,
+    arrows:false,
+    dots:true
+});
+// end of lunch and dinner for indian
+
+// For desert of indian
+$('.indesert-container').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    arrows:false,
+    asNavFor: '.indesertslider-nav'
+
+});
+$('.indesertslider-nav').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    asNavFor: '.indesert-container',
+    centerMode: false,
+    infinite: false,
+    centerPadding: '60px',
+    focusOnSelect: true,
+    draggable:false
+});
+// end of desert for indian
+
+// For breakfast of japanese
+$('.jbreakfast-container').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    arrows:false,
+    asNavFor: '.jbfslider-nav'
+
+});
+$('.jbfslider-nav').slick({
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    asNavFor: '.jbreakfast-container',
+    centerMode: false,
+    infinite: true,
+    centerPadding: '60px',
+    focusOnSelect: true,
+    draggable:false,
+});
+// end of breakfast for japanese
+
+// For lunch and dinner of japanese
+$('.jlandd-container').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    arrows:true,
+    asNavFor: '.jlanddslider-nav'
+
+});
+$('.jlanddslider-nav').slick({
+    slidesToShow: 5,
+    slidesToScroll: 3,
+    asNavFor: '.jlandd-container',
+    centerMode: false,
+    infinite: false,
+    centerPadding: '60px',
+    focusOnSelect: true,
+    draggable:true,
+    arrows:false,
+    dots:true
+});
+// end of lunch and dinner for japanese
+
+// For desert of japanese
+$('.jdesert-container').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    arrows:false,
+    asNavFor: '.jdesertslider-nav'
+
+});
+$('.jdesertslider-nav').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    asNavFor: '.jdesert-container',
+    centerMode: false,
+    infinite: false,
+    centerPadding: '60px',
+    focusOnSelect: true,
+    draggable:false
+});
+// end of desert for Japanese
+
+// For breakfast of australian
+$('.abreakfast-container').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    arrows:false,
+    asNavFor: '.abfslider-nav'
+
+});
+$('.abfslider-nav').slick({
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    asNavFor: '.abreakfast-container',
+    centerMode: false,
+    infinite: true,
+    centerPadding: '60px',
+    focusOnSelect: true,
+    draggable:false,
+});
+// end of breakfast for australian
+
+// For lunch and dinner of australian
+$('.alandd-container').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    arrows:true,
+    asNavFor: '.alanddslider-nav'
+
+});
+$('.alanddslider-nav').slick({
+    slidesToShow: 5,
+    slidesToScroll: 3,
+    asNavFor: '.alandd-container',
+    centerMode: false,
+    infinite: false,
+    centerPadding: '60px',
+    focusOnSelect: true,
+    draggable:true,
+    arrows:false,
+    dots:true
+});
+// end of lunch and dinner for australian
+
+// For desert of australian
+$('.adesert-container').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    arrows:false,
+    asNavFor: '.adesertslider-nav'
+
+});
+$('.adesertslider-nav').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    asNavFor: '.adesert-container',
+    centerMode: false,
+    infinite: false,
+    centerPadding: '60px',
+    focusOnSelect: true,
+    draggable:false
+});
+// end of desert for australian
+
+</script>
+</body>
+</html>

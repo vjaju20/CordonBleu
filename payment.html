@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Billing Gateway</title>
+    <script type="text/javascript" src="payment.js"></script>
+<script>
+function yesCheck() {
+    if (document.getElementById('yC').checked) {
+        document.getElementById('ifYes').style.visibility = 'visible';
+    }
+    else document.getElementById('ifYes').style.visibility = 'hidden';
+	
+	if (document.getElementById('yC2').checked) {
+        document.getElementById('ifYes2').style.visibility = 'visible';
+    }
+    else document.getElementById('ifYes2').style.visibility = 'hidden';
+}
+function validateYourName()
+{
+	var yName = document.getElementById("yourName").value;
+	var re1 = /^[a-zA-Z\s\'\-]{2,15}$/;
+	if (re1.test(yName))
+	{
+		document.getElementById("yourNamePrompt").style.color = "green";
+		document.getElementById("yourNamePrompt").innerHTML = "<strong>valid</strong>";
+		return true;
+	}
+}
+function validatePhone()
+{
+	var phoneNumber = document.getElementById("phone").value;
+	var re2 = /^\d{5}-\d{5}$/;
+	
+	if (re2.test(phoneNumber))
+	{
+		document.getElementById("phonePrompt").style.color = "green";
+		document.getElementById("phonePrompt").innerHTML = "<strong>valid</strong>";
+		return true;
+	}
+}
+function validateAddress()
+{
+	var ad = document.getElementById("add1").value;
+	var re5 = /^(?=.*\d)&(?=.*[a-z])|(?=.*[A-Z]).{7,30}$/;
+	if (re5.test(ad))
+	{
+		document.getElementById("addPrompt").style.color = "green";
+		document.getElementById("addPrompt").innerHTML = "<strong>valid</strong>";
+		return true;
+	}
+}
+function enterAmount()
+{
+    var name=localStorage.getItem("bill");
+	document.getElementById("amount").innerHTML ="Rs. " + name;
+}
+function validateCard()
+{
+	var cardNumber = document.getElementById("card").value;
+	var re3 = /^\d{4} \d{4} \d{4}$/;
+	
+	if (re3.test(cardNumber))
+	{
+		document.getElementById("cardPrompt").style.color = "green";
+		document.getElementById("cardPrompt").innerHTML = "<strong>valid</strong>";
+		return true;
+	}
+	else
+	{
+        document.getElementById("cardPrompt").style.color = "red";
+		document.getElementById("cardPrompt").innerHTML = "<strong>xxxx xxxx xxxx</strong>";
+		return false;
+	}
+}
+function validateCVV()
+{
+	var cvvNumber = document.getElementById("cvv").value;
+	var re4 = /^\d{3}$/;
+	
+	if (re4.test(cvvNumber))
+	{
+		document.getElementById("cvvPrompt").style.color = "green";
+		document.getElementById("cvvPrompt").innerHTML = "<strong>valid</strong>";
+		return true;
+	}
+	else
+	{
+        document.getElementById("cvvPrompt").style.color = "red";
+		document.getElementById("cvvPrompt").innerHTML = "<strong>Must be 3 digit number</strong>";
+		return false;
+	}
+}
+function myPay(){
+    var yName = document.getElementById("yourName").value;
+	var re1 = /^[a-zA-Z\s\'\-]{2,15}$/;
+	var phoneNumber = document.getElementById("phone").value;
+	var re2 = /^\d{5}-\d{5}$/;
+	var ad = document.getElementById("add1").value;
+	var re5 = /^(?=.*\d)&(?=.*[a-z])|(?=.*[A-Z]).{7,30}$/;
+	if(re1.test(yName)&&re2.test(phoneNumber)&&re5.test(ad)){
+	localStorage.clear();
+	document.getElementById("link").href="img/payimg.png";
+       window.alert("Congratulations!!! your transaction is Succesful");
+	}
+	else if(re1.test(yName)&&re2.test(phoneNumber)){
+	   document.getElementById("addPrompt").style.color = "red";
+	   document.getElementById("addPrompt").innerHTML = "<strong>Enter a valid Address</strong>";
+	}
+	else if(re2.test(phoneNumber)&&re5.test(ad)){
+	   document.getElementById("yourNamePrompt").style.color = "red";
+	   document.getElementById("yourNamePrompt").innerHTML = "<strong>Enter 2-15 alphabets</strong>";
+	}
+	else if(re1.test(yName)&&re5.test(ad)){
+	   document.getElementById("phonePrompt").style.color = "red";
+	   document.getElementById("phonePrompt").innerHTML = "<strong>Must be 10 digit number</strong>";
+	}
+	else if(re1.test(yName)){
+	   document.getElementById("phonePrompt").style.color = "red";
+	   document.getElementById("phonePrompt").innerHTML = "<strong>Must be 10 digit number</strong>";
+	   document.getElementById("addPrompt").style.color = "red";
+	   document.getElementById("addPrompt").innerHTML = "<strong>Enter a valid Address</strong>";
+	}
+	else if(re2.test(phoneNumber)){
+	   document.getElementById("yourNamePrompt").style.color = "red";
+	   document.getElementById("yourNamePrompt").innerHTML = "<strong>Enter 2-15 alphabets</strong>";
+	   document.getElementById("addPrompt").style.color = "red";
+	   document.getElementById("addPrompt").innerHTML = "<strong>Enter a valid Address</strong>";
+	}
+	else if(re5.test(ad)){
+	   document.getElementById("yourNamePrompt").style.color = "red";
+	   document.getElementById("yourNamePrompt").innerHTML = "<strong>Enter 2-15 alphabets</strong>";
+	   document.getElementById("phonePrompt").style.color = "red";
+	   document.getElementById("phonePrompt").innerHTML = "<strong>Must be 10 digit number</strong>";
+	}
+	else{
+	   document.getElementById("yourNamePrompt").style.color = "red";
+	   document.getElementById("yourNamePrompt").innerHTML = "<strong>Enter 2-15 alphabets</strong>";
+	   document.getElementById("phonePrompt").style.color = "red";
+	   document.getElementById("phonePrompt").innerHTML = "<strong>Must be 10 digit number</strong>";
+	   document.getElementById("addPrompt").style.color = "red";
+	   document.getElementById("addPrompt").innerHTML = "<strong>Enter a valid Address</strong>";
+	}
+}
+</script>
+<style>
+body{
+background-image:url("https://image.freepik.com/free-photo/credit-cards-banknotes-background_34200-286.jpg");
+background-size:cover;
+}
+#back{
+background-color:white;
+width:400px;
+position:relative;
+left:5px;
+top:-10px;
+border-radius:20px;
+}
+h1{
+position:relative;
+left:80px;
+color:blue;
+text-transform:uppercase;
+letter-spacing:2px;
+text-shadow:5px 5px 2px #66ff33;
+text-decoration:underline;
+}
+#add{
+position:relative;
+top:-17px;
+}
+#t{
+position:relative;
+left:20px;
+}
+a{
+text-decoration:none;
+}
+input[type="radio"]:checked+label{
+color:#6F00DC;
+}
+input[type="radio"]:checked+#b{
+color:aqua;
+}
+button{
+position:relative;
+left:145px;
+width:70px;
+top:-5px;
+}
+#amount{
+    display:inline;
+    border:solid;
+    border-width: 1px;
+    border-color:gray;
+    border-radius: 2px;
+}
+</style>
+</head>
+<body onload="enterAmount()">
+<div id="back">
+<h1>Bill Info</h1>
+<form>
+<b>&nbsp;&nbsp;&nbsp;&nbsp;*Name</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="yourName" type="text" onblur="validateYourName();" required>&nbsp;<span id="yourNamePrompt"></span><br><br>
+<b>&nbsp;&nbsp;&nbsp;&nbsp;*Phone</b>&nbsp;&nbsp;+91<input type="tel" maxlength="11" placeholder="xxxxx-xxxxx" id="phone" onblur="validatePhone();" required>&nbsp;<span id="phonePrompt"></span><br><br>
+<b><span id="add">&nbsp;&nbsp;&nbsp;&nbsp;*Address</span></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea rows="3" cols="30" maxlength="60" onblur="validateAddress();" id="add1" required></textarea>&nbsp;<span id="addPrompt"></span><br><br>
+    <b>&nbsp;&nbsp;&nbsp;&nbsp;Amount</b>&nbsp;&nbsp;&nbsp &nbsp;&nbsp;&nbsp;<p id="amount"></p><br><br>
+<b>
+&nbsp;&nbsp;<input type="radio" onclick="yesCheck();" name="pay" checked><label>Cash On Delivery(COD)</label><br>
+&nbsp;&nbsp;<input type="radio" onclick="yesCheck();" name="pay" id="yC"><label>Credit/Debit/ATM Card</label></b>
+<div id="ifYes" style="visibility:hidden">
+<table>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="tel" maxlength="14" placeholder="Card Number" id="card" onblur="validateCard();">&nbsp;<span id="cardPrompt"></span></td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;Valid Till&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="month"></td>
+<td><br>&nbsp;&nbsp;<input type="password" maxlength="3" placeholder="CVV" id="cvv" onblur="validateCVV();">&nbsp;<span id="cvvPrompt"></span></td>
+</tr>
+</table>
+</div>
+<b>
+&nbsp;&nbsp;<input type="radio" onclick="yesCheck();" name="pay"><label>UPI(PhonePe/Google Pay/BHIM)</label><br>
+&nbsp;&nbsp;<input type="radio" onclick="yesCheck();" name="pay" id="yC2"><label>Net Banking</label>
+<div id="ifYes2" style="visibility:hidden">
+<table id="t">
+<tr>
+<td><input type="radio" name="bank"><label id="b">AXIS Bank</label></td>
+</tr>
+<tr>
+<td><input type="radio" name="bank"><label id="bb">ICICI Bank</label></td>
+</tr>
+<tr>
+<td><input type="radio" name="bank"><label id="c">HDFC Bank</label></td>
+</tr>
+<tr>
+<td><input type="radio" name="bank"><label id="d">Kotak Bank</label></td>
+</tr>
+<tr>
+<td><input type="radio" name="bank"><label id="e">Bank of India(BOI)</label></td>
+</tr>
+</table>
+</div>
+</b>
+
+<button onclick="myPay();" style="background-color : #31B0D5;
+    color: ghostwhite;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border-color: #46b8da;"><a id="link">PAY</a></button>
+</form>
+</div>
+</body>
+</html>
